@@ -1,0 +1,108 @@
+html, body{
+  background-color: #f2f2f2;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Lato', sans-serif;
+}
+
+.jumbotron{
+  height: 100%;
+  width: 100%;
+  background-color: inherit;
+  margin: 0%;
+  padding: 0%;
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+} 
+
+.wrapper{
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+
+.card{
+  box-shadow: 0 0 5px #ababab; 
+  background-color: white;
+}
+
+
+.min-change{
+  width: 80%;
+  margin-left: 10%;
+}
+
+.navbar-brand{
+  padding-left: 4%;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white; /*Change active text color here*/
+}
+
+.navbar{
+  padding-bottom: 0;
+}
+
+.navbar-nav{
+  margin: 0;
+  padding-right: 4%;
+  padding-bottom: 0;
+}
+
+.navbar-toggle{
+  margin-right: 7%;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: silver; /*Change rollover cell color here*/
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: #023c4a;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >   
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+color: white; /*BACKGROUND color for active*/
+background-color: #030033;
+}
+
+.navbar-default {
+  background-color: #0f006f;
+  border: none;
+}
+
+
+@media(max-width:767px){
+    #picture {
+    height: 15%;
+	}
+
+    #title{
+    margin-top: 50%;
+    }  
+}
+@media(min-width:768px){
+
+}
+@media(min-width:992px){
+
+}
+@media(min-width:992px) and (max-width:1200px){
+
+}
+@media(min-width:1200px){
+
+}
