@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us" class="">
+
+<header>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/demo.css">
+  <link rel="stylesheet" type="text/css" href="css/set2.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</header>
+
+<style>
+.jumbotron{
+  height: 100%;
+  background-color: inherit;
+  margin: 0%;
+  padding: 0%;
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+} 
+
+.wrapper{
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+
+.introtext{}
+
+</style>
+
+<body>
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="jumbotron">
+        <div class="col-lg-7" style="padding:8%;">
+         <div class="test col-md-8 col-md-offset-2" align="center" style="padding-bottom:1%;" >
+          <img src="images/civicbridgeword.png" width="60%">
+          <div class="introtext"><h5 style="color:white"> If you would like more information, fill out the form below! </h5></div>
+        </div>
+        
+        <form name="contactform" method="post" class="form-horizontal" action="test.php">
+          <span class="form-group input input--nao">
+            <input class="input__field input__field--nao" type="text" id="input-1" name="name" required />
+            <label class="input__label input__label--nao" for="input-1">
+              <span class="input__label-content input__label-content--nao" style="color:white">Name</span>
+            </label>
+            <svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+              <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+            </svg>
+          </span> <br>
+
+          <span class="form-group input input--nao">
+            <input class="input__field input__field--nao" type="text" id="input-1" pattern="[0-9/-]{9,14}" name="phone" required />
+            <label class="input__label input__label--nao" for="input-1">
+              <span class="input__label-content input__label-content--nao" style="color:white">Phone</span>
+            </label>
+            <svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+              <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+            </svg>
+          </span> <br>
+
+          <span class="form-group input input--nao">
+            <input class="input__field input__field--nao" type="email" id="input-1" name="email" required/>
+            <label class="input__label input__label--nao" for="input-1">
+              <span class="input__label-content input__label-content--nao" style="color:white">Email</span>
+            </label>
+            <svg class="graphic graphic--nao" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+              <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+            </svg>
+          </span> 
+
+
+      <div class="form-group" style="margin-top:8%">
+        <div class="col-xs-6 col-xs-offset-3">
+          <button id="submit" class="btn btn-block reset" type="submit" style="color:white; border:none; background-color:#00708f;">Submit</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="endm col-md-6 col-md-offset-3" align="center">
+      <img src="images/emailsent1.png" width="100%">
+      <h2 style="color:white;"> Thanks for your submission! </h2>
+    </div>
+
+  </div>
+  <div class="col-lg-6 col-lg-push-7 dblue">
+  </div>
+
+
+</div>
+</div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/civiscustom.js"></script>
+
+<script>
+$('form').on('submit', function(){
+location.reload(true);
+});
+
+/*$('form').on('submit', function(){
+  $('.test').hide();
+});
+
+$('.endm').click(function(){
+  location.reload(true);
+});*/
+
+</script>
