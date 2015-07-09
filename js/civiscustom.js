@@ -3,19 +3,19 @@ $('.text').click(function(){
   $('form').show();
 });
 
-$('form').on('submit', function (e) {
-          e.preventDefault(); //prevent to reload the page
-          $.ajax({
-            type: 'POST', //hide url
-            url: 'test.php', //your form validation url
-            data: $('form').serialize(),
-            success: function () {
-              $('form').hide();
+//$('form').on('submit', function (e) {
+//          e.preventDefault(); //prevent to reload the page
+//          $.ajax({
+//            type: 'POST', //hide url
+//            url: 'test.php', //your form validation url
+//            data: $('form').serialize(),
+//            success: function () {
+//              $('form').hide();
              // $('.reset').closest('form').find("input[type=text], [type=email], textarea").val("");
-             $('.endm').delay(800).show();
-           }
-         });
-        });
+//             $('.endm').delay(800).show();
+//           }
+//         });
+//        });
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   $('.col-xs-2').css({'width':'42%'});

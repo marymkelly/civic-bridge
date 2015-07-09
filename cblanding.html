@@ -51,7 +51,7 @@
           <div class="introtext"><h5 style="color:white"> If you would like more information, fill out the form below! </h5></div>
         </div>
         
-        <form name="contactform" method="post" class="form-horizontal" action="test.php">
+        <form name="contactform" method="post" class="form-horizontal">
           <span class="form-group input input--nao">
             <input class="input__field input__field--nao" type="text" id="input-1" name="name" required />
             <label class="input__label input__label--nao" for="input-1">
@@ -112,12 +112,13 @@
 <script>
 
 
-$('form').on('submit', function(){
+$('#submit').on('click', function(){
   $('.test').hide();
 });
 
 $('.endm').click(function(){
   location.reload(true);
 });
+
 
 </script>
